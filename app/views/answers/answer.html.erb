@@ -1,0 +1,9 @@
+<h1>Stupid Coaching</h1>
+<h2><%= params[:question]%></h2>
+<% if params[:question.downcase] == "i am going to work" %>
+  <h2>Great!</h2>
+<% elsif params[:question].include?("?") == true %>
+  <h2>Silly question, get dressed and go to work!</h2>
+<% else %>
+  <h2>I don't care, get dressed and go to work!</h2>
+<% end %>
